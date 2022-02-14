@@ -26,7 +26,7 @@ public class DCProxyConfiguration extends Configuration {
     @JsonProperty
     private String contactPoints = "localhost";
     @JsonProperty
-    private String localDC = "dc1";
+    private String localDC = "datacenter1";
     @JsonProperty
     private String cqlUserName = "cassandra";
     @JsonProperty
