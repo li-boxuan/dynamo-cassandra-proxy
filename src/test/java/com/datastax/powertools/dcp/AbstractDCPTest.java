@@ -19,7 +19,7 @@ public class AbstractDCPTest
 
     @ClassRule
     public static final DropwizardAppRule<DCProxyConfiguration> RULE = new DropwizardAppRule<>(DCProxyApplication.class, "",
-            ConfigOverride.config("dockerCassandra", "true"));
+            ConfigOverride.config("dockerCassandra", "false"));
 
     protected synchronized AmazonDynamoDB getProxyClient()
     {
